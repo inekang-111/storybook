@@ -1,0 +1,64 @@
+info @storybook/react v6.5.16
+info 
+info => Cleaning outputDir: /var/folders/49/jnk_f4b55tn3hspz1jq8c27w0000gn/T/chromatic--37504-IK4wpCmZFw5t
+info => Loading presets
+WARN   Failed to load preset: "/Users/devstack/storybook/node_modules/@storybook/manager-webpack4/dist/cjs/presets/manager-preset.js"
+ERR! Error: Cannot find module 'react/package.json'
+ERR! Require stack:
+ERR! - /Users/devstack/storybook/node_modules/@storybook/ui/noop.js
+ERR!     at Module._resolveFilename (node:internal/modules/cjs/loader:995:15)
+ERR!     at resolveFileName (/Users/devstack/storybook/node_modules/resolve-from/index.js:29:39)
+ERR!     at resolveFrom (/Users/devstack/storybook/node_modules/resolve-from/index.js:43:9)
+ERR!     at module.exports (/Users/devstack/storybook/node_modules/resolve-from/index.js:46:47)
+ERR!     at Object.<anonymous> (/Users/devstack/storybook/node_modules/@storybook/ui/paths.js:17:18)
+ERR!     at Module._compile (node:internal/modules/cjs/loader:1159:14)
+ERR!     at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+ERR!     at Module.load (node:internal/modules/cjs/loader:1037:32)
+ERR!     at Module._load (node:internal/modules/cjs/loader:878:12)
+ERR!     at Module.require (node:internal/modules/cjs/loader:1061:19)
+ERR!  Error: Cannot find module 'react/package.json'
+ERR! Require stack:
+ERR! - /Users/devstack/storybook/node_modules/@storybook/ui/noop.js
+ERR!     at Module._resolveFilename (node:internal/modules/cjs/loader:995:15)
+ERR!     at resolveFileName (/Users/devstack/storybook/node_modules/resolve-from/index.js:29:39)
+ERR!     at resolveFrom (/Users/devstack/storybook/node_modules/resolve-from/index.js:43:9)
+ERR!     at module.exports (/Users/devstack/storybook/node_modules/resolve-from/index.js:46:47)
+ERR!     at Object.<anonymous> (/Users/devstack/storybook/node_modules/@storybook/ui/paths.js:17:18)
+ERR!     at Module._compile (node:internal/modules/cjs/loader:1159:14)
+ERR!     at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+ERR!     at Module.load (node:internal/modules/cjs/loader:1037:32)
+ERR!     at Module._load (node:internal/modules/cjs/loader:878:12)
+ERR!     at Module.require (node:internal/modules/cjs/loader:1061:19) {
+ERR!   code: 'MODULE_NOT_FOUND',
+ERR!   requireStack: [ '/Users/devstack/storybook/node_modules/@storybook/ui/noop.js' ]
+ERR! }
+info => Compiling manager..
+info => Compiling preview..
+node:internal/crypto/hash:71
+  this[kHandle] = new _Hash(algorithm, xofLen);
+                  ^
+
+Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:71:19)
+    at Object.createHash (node:crypto:133:10)
+    at module.exports (/Users/devstack/storybook/node_modules/webpack/lib/util/createHash.js:135:53)
+    at Compilation.createHash (/Users/devstack/storybook/node_modules/webpack/lib/Compilation.js:1918:16)
+    at /Users/devstack/storybook/node_modules/webpack/lib/Compilation.js:1386:9
+    at AsyncSeriesHook.eval [as callAsync] (eval at create (/Users/devstack/storybook/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:6:1)
+    at AsyncSeriesHook.lazyCompileHook (/Users/devstack/storybook/node_modules/tapable/lib/Hook.js:154:20)
+    at Compilation.seal (/Users/devstack/storybook/node_modules/webpack/lib/Compilation.js:1342:27)
+    at /Users/devstack/storybook/node_modules/webpack/lib/Compiler.js:675:18
+    at /Users/devstack/storybook/node_modules/webpack/lib/Compilation.js:1261:4
+    at AsyncSeriesHook.eval [as callAsync] (eval at create (/Users/devstack/storybook/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:24:1)
+    at AsyncSeriesHook.lazyCompileHook (/Users/devstack/storybook/node_modules/tapable/lib/Hook.js:154:20)
+    at Compilation.finish (/Users/devstack/storybook/node_modules/webpack/lib/Compilation.js:1253:28)
+    at /Users/devstack/storybook/node_modules/webpack/lib/Compiler.js:672:17
+    at eval (eval at create (/Users/devstack/storybook/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:11:1)
+    at /Users/devstack/storybook/node_modules/webpack/lib/Compilation.js:1185:12 {
+  opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
+  library: 'digital envelope routines',
+  reason: 'unsupported',
+  code: 'ERR_OSSL_EVP_UNSUPPORTED'
+}
+
+Node.js v18.12.1
